@@ -6,6 +6,25 @@ import { useParams } from 'next/navigation';
 export default function ModulePage() {
   const params = useParams();
   const moduleId = params.id as string;
+  
+  const getModulePath = (id: string) => {
+    const moduleMap: { [key: string]: string } = {
+      '1': 'introduction',
+      '2': 'module-2',
+      '3': 'module-3',
+      '4': 'module-4',
+      '5': 'module-5',
+      '6': 'module-6',
+      '7': 'module-7',
+      '8': 'module-8'
+    };
+    return moduleMap[id] || `module-${id}`;
+  };
+
+  const handleLaunchModule = () => {
+    const modulePath = getModulePath(moduleId);
+    window.open(`/modules/${modulePath}/index.html`, '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-6">
@@ -39,13 +58,15 @@ export default function ModulePage() {
             </ul>
           </div>
           
-          <div className="border-2 border-dashed border-gold-beige rounded-lg p-12 text-center">
-            <div className="text-gold-beige text-6xl mb-4">📚</div>
-            <h3 className="text-xl font-semibold text-gray-700 mb-2">
-              Ready for Your Content
-            </h3>
-            <p className="text-gray-600">
-              Replace this placeholder with your eLearning module content
+          <div className="text-center">
+            <button
+              onClick={handleLaunchModule}
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-gold-beige to-royal-blue text-white font-semibold text-lg rounded-lg hover:from-royal-blue hover:to-lavender-blue transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              🚀 Launch Module {moduleId} in New Window
+            </button>
+            <p className="text-gray-600 mt-4 text-sm">
+              Opens the interactive learning content in a new browser window for the best experience
             </p>
           </div>
         </div>
