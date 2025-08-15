@@ -15,8 +15,8 @@ export default function ModulePage() {
       '4': 'effectivelistening',
       '5': 'relationshipbuilding',
       '6': 'selfreflection',
-      '7': 'summary',
-      '8': 'equityandinclusion'
+      '7': 'equityandinclusion',
+      '8': 'summary'
     };
     return moduleMap[id] || `module-${id}`;
   };

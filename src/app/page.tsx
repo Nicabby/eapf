@@ -8,8 +8,8 @@ export default function Home() {
     { id: 4, title: 'Effective Listening' },
     { id: 5, title: 'Relationship Building' },
     { id: 6, title: 'Self-Reflection' },
-    { id: 7, title: 'Summary' },
-    { id: 8, title: 'Equity and Inclusion' }
+    { id: 7, title: 'Equity and Inclusion' },
+    { id: 8, title: 'Summary' }
   ];
 
   return (
