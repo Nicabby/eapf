@@ -9,7 +9,7 @@ export default function Home() {
     { id: 5, title: 'Relationship Building' },
     { id: 6, title: 'Self-Reflection' },
     { id: 7, title: 'Summary' },
-    { id: 8, title: 'Module 8' }
+    { id: 8, title: 'Equity and Inclusion' }
   ];
 
   return (

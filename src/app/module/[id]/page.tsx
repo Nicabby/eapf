@@ -12,11 +12,11 @@ export default function ModulePage() {
       '1': 'introduction',
       '2': 'leadership',
       '3': 'communication',
-      '4': 'effective-listening',
-      '5': 'relationship-building',
-      '6': 'self-reflection',
+      '4': 'effectivelistening',
+      '5': 'relationshipbuilding',
+      '6': 'selfreflection',
       '7': 'summary',
-      '8': 'module-8'
+      '8': 'equityandinclusion'
     };
     return moduleMap[id] || `module-${id}`;
   };
