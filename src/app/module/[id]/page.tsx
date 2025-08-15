@@ -12,10 +12,10 @@ export default function ModulePage() {
       '1': 'introduction',
       '2': 'leadership',
       '3': 'communication',
-      '4': 'module-4',
-      '5': 'module-5',
-      '6': 'module-6',
-      '7': 'module-7',
+      '4': 'effective-listening',
+      '5': 'relationship-building',
+      '6': 'self-reflection',
+      '7': 'summary',
       '8': 'module-8'
     };
     return moduleMap[id] || `module-${id}`;

@@ -5,10 +5,10 @@ export default function Home() {
     { id: 1, title: 'Introduction' },
     { id: 2, title: 'Leadership' },
     { id: 3, title: 'Communication' },
-    { id: 4, title: 'Module 4' },
-    { id: 5, title: 'Module 5' },
-    { id: 6, title: 'Module 6' },
-    { id: 7, title: 'Module 7' },
+    { id: 4, title: 'Effective Listening' },
+    { id: 5, title: 'Relationship Building' },
+    { id: 6, title: 'Self-Reflection' },
+    { id: 7, title: 'Summary' },
     { id: 8, title: 'Module 8' }
   ];
 
