@@ -10,8 +10,8 @@ export default function ModulePage() {
   const getModulePath = (id: string) => {
     const moduleMap: { [key: string]: string } = {
       '1': 'introduction',
-      '2': 'module-2',
-      '3': 'module-3',
+      '2': 'leadership',
+      '3': 'communication',
       '4': 'module-4',
       '5': 'module-5',
       '6': 'module-6',
