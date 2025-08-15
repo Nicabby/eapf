@@ -1,7 +1,16 @@
 import Link from 'next/link';
 
 export default function Home() {
-  const modules = Array.from({ length: 8 }, (_, i) => i + 1);
+  const modules = [
+    { id: 1, title: 'Introduction' },
+    { id: 2, title: 'Leadership' },
+    { id: 3, title: 'Communication' },
+    { id: 4, title: 'Module 4' },
+    { id: 5, title: 'Module 5' },
+    { id: 6, title: 'Module 6' },
+    { id: 7, title: 'Module 7' },
+    { id: 8, title: 'Module 8' }
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 p-6">
@@ -16,18 +25,18 @@ export default function Home() {
         </header>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-          {modules.map((moduleNumber) => (
+          {modules.map((module) => (
             <Link
-              key={moduleNumber}
-              href={`/module/${moduleNumber}`}
+              key={module.id}
+              href={`/module/${module.id}`}
               className="group relative bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               <div className="p-8 text-center">
                 <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-gold-beige to-royal-blue rounded-full flex items-center justify-center text-white text-2xl font-bold group-hover:from-royal-blue group-hover:to-lavender-blue transition-all duration-300">
-                  {moduleNumber}
+                  {module.id}
                 </div>
                 <h3 className="text-xl font-semibold text-royal-blue mb-2">
-                  Module {moduleNumber}
+                  {module.title}
                 </h3>
                 <p className="text-gray-600 text-sm">
                   Interactive Learning Experience
