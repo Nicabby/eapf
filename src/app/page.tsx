@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const modules = [
@@ -32,8 +33,17 @@ export default function Home() {
               className="group relative bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >
               <div className="p-8 text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-gold-beige to-royal-blue rounded-full flex items-center justify-center text-white text-2xl font-bold group-hover:from-royal-blue group-hover:to-lavender-blue transition-all duration-300">
-                  {module.id}
+                <div className="mb-4">
+                  <Image
+                    src="/eaplogo.png"
+                    alt="EAP Logo"
+                    width={48}
+                    height={48}
+                    className="mx-auto mb-3"
+                  />
+                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-gold-beige to-royal-blue rounded-full flex items-center justify-center text-white text-2xl font-bold group-hover:from-royal-blue group-hover:to-lavender-blue transition-all duration-300">
+                    {module.id}
+                  </div>
                 </div>
                 <h3 className="text-xl font-semibold text-royal-blue mb-2">
                   {module.title}
